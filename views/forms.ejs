@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/react.js"></script>
+    <script src="/js/react-dom.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.6/lodash.min.js"></script>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Project Administrator</a>
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-footer">
+                        <a href="#">Read All New Messages</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu alert-dropdown">
+                    <li>
+                        <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">View All</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="/"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a href="dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="projectlist">
+                        <i class="fa fa-fw fa-bar-chart-o"></i>  Projects
+                        <!--<i class="fa fa-fw fa-bar-chart-o" onclick="UserAction()"></i>  Projects-->
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="forms"><i class="fa fa-fw fa-edit"></i> Create Projects</a>
+                </li>
+                <li>
+                    <a href="Charts"><i class="fa fa-fw fa-dashboard"></i> Charts</a>
+                </li>
+                <li>
+                    <a href="timeline"><i class="fa fa-fw fa-dashboard"></i> Timeline</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="petAppointments"></div>
+                        <script type="text/babel">
+                            var MainInterface = React.createClass({
+                                getInitialState: function() {
+                                    return {
+                                        aptBodyVisible: false,
+                                        orderBy: 'title',
+                                        orderDir: 'asc',
+                                        queryText: '',
+                                        myData: []
+                                    }
+                                },
+                                componentDidMount: function() {
+                                    //this.serverRequest = $.get('/json/data.json', function(result) {
+                                    this.serverRequest = $.get('http://localhost:3000/projects', function(result) {
+                                        var tempApts = result;
+                                        this.setState({
+                                            myData: tempApts
+                                        });//setState
+                                    }.bind(this));
+
+                                    this.serverRequest = $.get('http://localhost:3000/projects', function(result) {
+                                        var tempApts = result;
+                                        console.log('In hanlder of request ... ');
+                                        console.log(result);
+//                                this.setState({
+//                                  myData: tempApts
+//                                });//setState
+                                    }.bind(this));
+
+                                },
+                                componentWillUnmount: function () {
+                                    this.serverRequest.abort();
+                                },
+                                deleteMessage: function (item) {
+                                    var allApts = this.state.myData;
+                                    var newApts = _.without(allApts, item);
+                                    this.setState({
+                                        myData: newApts
+                                    });
+                                },//deleteMessage
+                                toggleAddDisplay: function () {
+                                    var tempVisibility = !this.state.aptBodyVisible;
+                                    this.setState({
+                                        aptBodyVisible: tempVisibility
+                                    });//setState
+                                },//toggleAddDisplay
+                                addItem: function (tempItem) {
+                                    var tempApts = this.state.myData;
+                                    tempApts.push(tempItem);
+                                    this.setState({
+                                        myData: tempApts
+                                    });//setState
+                                },//addItem
+
+                                reOrder: function (orderBy, orderDir) {
+                                    this.setState({
+                                        orderBy: orderBy,
+                                        orderDir: orderDir
+                                    });//setState
+                                },
+                                searchApts(q){
+                                    this.setState({
+                                        queryText: q
+                                    });
+                                },//SearchApts
+
+                                render: function() {
+//                                        var filteredApts = this.state.myData;
+                                    var filteredApts = [];
+                                    var orderBy = this.state.orderBy;
+                                    var orderDir = this.state.orderDir;
+                                    var queryText = this.state.queryText;
+                                    var myData = this.state.myData;
+
+                                    myData.forEach(function (item) {
+                                        if(
+                                            (item.title.toLowerCase().indexOf(queryText)!= -1) ||
+                                            (item.ManagerName.toLowerCase().indexOf(queryText)!= -1) ||
+                                            (item.dead_date.toLowerCase().indexOf(queryText)!= -1) ||
+                                            (item.description.toLowerCase().indexOf(queryText)!= -1)
+                                        ){
+                                            filteredApts.push(item);
+                                        }
+                                    });
+
+                                    filteredApts = _.orderBy(filteredApts, function(item) {
+                                        return item[orderBy].toLowerCase();
+                                    },orderDir);//orderBy
+
+                                    filteredApts = filteredApts.map(function(item, index) {
+                                        return(
+                                                <AptList key = { index }
+                                                         singleItem = { item }
+                                                         whichItem = { item }
+                                                         onDelete = { this.deleteMessage } />
+
+                                        )//return
+                                    }.bind(this));//filteredApts.map
+                                    return (
+                                            <div className="interface">
+                                                <AddAppointment
+                                                        bodyVisible = { this.state.aptBodyVisible }
+                                                        handleToggle = { this.toggleAddDisplay }
+                                                        addApt = { this.addItem }
+                                                />
+                                                <SearchAppointments
+                                                        orderBy = {this.state.orderBy}
+                                                        orderDir = {this.state.orderDir}
+                                                        onReOrder = {this.reOrder}
+                                                        onSearch = {this.searchApts}
+                                                />
+                                                <ul className="item-list media-list">
+                                                    {filteredApts}
+                                                </ul>
+                                            </div>
+                                    )//return
+                                }//render
+                            });//MainInterface
+                            var AptList = React.createClass({
+                                handleDelete: function () {
+                                    this.props.onDelete(this.props.whichItem)
+                                },
+                                handleDetails: function () {
+                                    console.log(' Ia m here');
+                                    console.log(this.props.whichItem);
+                                },
+                                render: function() {
+                                    return(
+                                            <li className="pet-item media">
+                                                <div className="media-left">
+                                                    <button className="pet-delete btn btn-xs
+                                                        btn-danger" onClick={this.handleDelete}>
+                                                        <span className="glyphicon glyphicon-remove">
+
+                                                        </span>
+
+                                                    </button>
+                                                </div>
+                                                <div className="pet-info media-body">
+                                                    <div className="pet-head">
+
+                                                        <span className="pet-name"  >{this.props.singleItem.title}</span>
+                                                        <span className="apt-date pull-right">{this.props.singleItem.dead_date}</span>
+                                                    </div>
+                                                    <div className="owner-name">
+                                                        <span className="label-item">Owner:</span>
+                                                        {this.props.singleItem.ManagerName}
+                                                    </div>
+                                                    <div className="owner-name">
+                                                        <span className="label-item">Project Github URL:</span>
+                                                        {this.props.singleItem.URL}
+                                                    </div>
+                                                    <div className="apt-notes">{this.props.singleItem.description}
+                                                    </div>
+                                                </div>
+                                            </li>
+                                    )//return
+                                }//render
+                            });//AptList
+                            var AddAppointment = React.createClass({
+                                toggleAptDisplay: function () {
+                                    this.props.handleToggle();
+                                },
+                                handleAdd: function (e) {
+                                    var tempItem = {
+                                        title: this.refs.inputtitle.value,
+                                        //ManagerName: parseInt(this.refs.inputManagerName.value),
+                                        manager_id: parseInt(this.refs.inputManagerName.value),
+                                        URL: this.refs.inputURL.value,
+                                        dead_date: this.refs.inputdead_date.value,
+                                        description: this.refs.inputdescription.value,
+                                        creation_date:this.refs.inputcreation_date.value
+                                    }//tempItem
+                                    e.preventDefault();
+                                    fetch('http://localhost:3000/projects', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Accept': 'application/json',
+                                            'Content-Type': 'application/json',
+                                        },
+                                        body: JSON.stringify(tempItem)
+                                    })
+                                    var tempItemStr = JSON.stringify(tempItem)
+                                    console.log("string item "+tempItemStr);
+                                    this.props.addApt(tempItem);
+                                },//handleAdd
+                                render: function () {
+
+                                    var displayAptBody = {
+                                        display: this.props.bodyVisible ? 'block': 'none'
+                                    }
+                                    return(
+                                            <div className="panel panel-primary">
+                                                <div className="panel-heading apt-addheading" onClick={ this.toggleAptDisplay }>
+                                                    <span className="glyphicon glyphicon-plus"></span> Add Project
+                                                </div>
+                                                <div className="panel-body" style={ displayAptBody }>
+                                                    <form className="add-appointment form-horizontal" onSubmit= { this.handleAdd }>
+                                                        <div className="form-group">
+                                                            <label className="col-sm-2 control-label" for="title">Project Name</label>
+                                                            <div className="col-sm-10">
+                                                                <input type="text" className="form-control"
+                                                                       id="title" ref="inputtitle" placeholder="Project Name"/>
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label className="col-sm-2 control-label" for="petOwner">Owner</label>
+                                                            <div className="col-sm-10">
+                                                                <input type="number" className="form-control"
+                                                                       id="petOwner" ref="inputManagerName" placeholder="Owner's Name"/>
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label className="col-sm-2 control-label" for="petOwner">Project GitHub URL</label>
+                                                            <div className="col-sm-10">
+                                                                <input type="text" className="form-control"
+                                                                       id="URL" ref="inputURL" placeholder="URL"/>
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label className="col-sm-2 control-label" for="creation_date">Start-Date</label>
+                                                            <div className="col-sm-4">
+                                                                <input type="date" className="form-control"
+                                                                       id="creation_date" ref="inputcreation_date"/>
+                                                            </div>
+                                                            <label className="col-sm-2 control-label" for="dead_date">End-Date</label>
+                                                            <div className="col-sm-4">
+                                                                <input type="date" className="form-control"
+                                                                       id="dead_date" ref="inputdead_date"/>
+                                                            </div>
+
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label className="col-sm-2 control-label" for="description">Notes</label>
+                                                            <div className="col-sm-10">
+                                                                <textarea className="form-control" rows="4" cols="50"
+                                                                          id="description" ref="inputdescription" placeholder="Notes">
+
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <div className="col-sm-offset-2 col-sm-10" >
+                                                                <button type="submit" className="btn btn-primary pull-right" onClick={ this.toggleAptDisplay }>Add Project</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                    )//return
+                                }//render
+                            });//AddAppointment
+                            var SearchAppointments = React.createClass({
+                                handleSort: function (e) {
+                                    this.props.onReOrder(e.target.id, this.props.orderDir);
+                                },//handleSort
+                                handleOrder: function (e) {
+                                    this.props.onReOrder(this.props.orderBy, e.target.id);
+                                },//handleOrder
+                                handleSearch: function (e) {
+                                    this.props.onSearch(e.target.value);
+
+                                },
+                                render: function () {
+                                    return(
+                                            <div className="row search-appointments">
+                                                <div className="col-sm-offset-3 col-sm-6">
+                                                    <div className="input-group">
+                                                        <input id="SearchApts" onChange={this.handleSearch} placeholder="Search" type="text" className="form-control" aria-label="Search Appointments" />
+                                                        <div className="input-group-btn">
+                                                            <button type="button" className="btn btn-primary dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by: <span className="caret"></span></button>
+                                                            <ul className="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#" id="title" onClick={ this.handleSort }>Project Name{ (this.props.orderBy === 'title') ? <span className="glyphicon glyphicon-ok"></span>: null} </a></li>
+                                                                <li><a href="#" id="dead_date" onClick={ this.handleSort }>Date { (this.props.orderBy === 'dead_date') ? <span className="glyphicon glyphicon-ok"></span>: null}</a></li>
+                                                                <li><a href="#" id="ManagerName" onClick={ this.handleSort }>Owner { (this.props.orderBy === 'ManagerName') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
+                                                                <li role="separator" className="divider"></li>
+                                                                <li><a href="#" id="asc" onClick={ this.handleOrder }>Asc { (this.props.orderDir === 'asc') ? <span className="glyphicon glyphicon-ok"></span>: null } </a></li>
+                                                                <li><a href="#" id="desc" onClick={ this.handleOrder }>Desc { (this.props.orderDir === 'desc') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    )//return
+                                }//render
+                            });//SearchAppointments
+
+                            ReactDOM.render(
+                                    <MainInterface />,document.getElementById('petAppointments')
+                            )
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Heading -->
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Forms
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i> Forms
+                        </li>
+                    </ol>
+                </div>
+            </div>-->
+            <!-- /.row -->
+
+            <!--<div class="row">
+                <div class="col-lg-6">
+
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label>Text Input</label>
+                            <input class="form-control">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Text Input with Placeholder</label>
+                            <input class="form-control" placeholder="Enter text">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Static Control</label>
+                            <p class="form-control-static">email@example.com</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>File input</label>
+                            <input type="file">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Text area</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Checkboxes</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Checkbox 1
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Checkbox 2
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Checkbox 3
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Inline Checkboxes</label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">1
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">2
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">3
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Radio Buttons</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Inline Radio Buttons</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Selects</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Multiple Selects</label>
+                            <select multiple class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit Button</button>
+                        <button type="reset" class="btn btn-default">Reset Button</button>
+
+                    </form>
+
+                </div>
+                <div class="col-lg-6">
+                    <h1>Disabled Form States</h1>
+
+                    <form role="form">
+
+                        <fieldset disabled>
+
+                            <div class="form-group">
+                                <label for="disabledSelect">Disabled input</label>
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="disabledSelect">Disabled select menu</label>
+                                <select id="disabledSelect" class="form-control">
+                                    <option>Disabled select</option>
+                                </select>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Disabled Checkbox
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Disabled Button</button>
+
+                        </fieldset>
+
+                    </form>
+
+                    <h1>Form Validation</h1>
+
+                    <form role="form">
+
+                        <div class="form-group has-success">
+                            <label class="control-label" for="inputSuccess">Input with success</label>
+                            <input type="text" class="form-control" id="inputSuccess">
+                        </div>
+
+                        <div class="form-group has-warning">
+                            <label class="control-label" for="inputWarning">Input with warning</label>
+                            <input type="text" class="form-control" id="inputWarning">
+                        </div>
+
+                        <div class="form-group has-error">
+                            <label class="control-label" for="inputError">Input with error</label>
+                            <input type="text" class="form-control" id="inputError">
+                        </div>
+
+                    </form>
+
+                    <h1>Input Groups</h1>
+
+                    <form role="form">
+
+                        <div class="form-group input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="fa fa-eur"></i></span>
+                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                        </div>
+
+                        <div class="form-group input-group">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon">.00</span>
+                        </div>
+
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                        </div>
+
+                    </form>
+
+                    <p>For complete documentation, please visit <a href="http://getbootstrap.com/css/#forms">Bootstrap's Form Documentation</a>.</p>
+
+                </div>
+            </div>-->
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+</body>
+
+</html>
